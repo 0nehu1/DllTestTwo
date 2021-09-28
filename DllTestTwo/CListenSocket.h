@@ -6,8 +6,8 @@ class CListenSocket :
 public:
 
     CPtrList m_ptrClientSocketList;
-    virtual void OnAccept(int nErrorCode);
-    void CloseClientSocket(CSocket* pClient);
-    void SendChatDataAll(TCHAR* pszMessage);
+    virtual void AFX_EXT_CLASS OnAccept(int nErrorCode);
+    void AFX_EXT_CLASS CloseClientSocket(CSocket* pClient);
+    void AFX_EXT_CLASS SendChatDataAll(TCHAR* pszMessage);
 };
 

@@ -3,7 +3,7 @@
 #include "CClientSocket.h"
 
 
-void CListenSocket::OnAccept(int nErrorCode)
+void AFX_EXT_CLASS CListenSocket::OnAccept(int nErrorCode)
 {
 	// TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다.
 
@@ -16,12 +16,12 @@ void CListenSocket::OnAccept(int nErrorCode)
 	else
 	{
 		delete pClient;
-		AfxMessageBox(_T("ERRORL Failed to accept new client!"));
+		AfxMessageBox(_T("ERROR: Failed to accept new client!"));
 	}
 	CAsyncSocket::OnAccept(nErrorCode);
 }
 
-void CListenSocket::CloseClientSocket(CSocket* pClient)
+void AFX_EXT_CLASS CListenSocket::CloseClientSocket(CSocket* pClient)
 {
 	POSITION pos;
 	pos = m_ptrClientSocketList.Find(pClient);
@@ -38,7 +38,7 @@ void CListenSocket::CloseClientSocket(CSocket* pClient)
 	}
 }
 
-void CListenSocket::SendChatDataAll(TCHAR* pszMessage)
+void AFX_EXT_CLASS CListenSocket::SendChatDataAll(TCHAR* pszMessage)
 {
 	POSITION pos;
 	pos = m_ptrClientSocketList.GetHeadPosition();

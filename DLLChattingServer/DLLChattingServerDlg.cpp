@@ -7,11 +7,11 @@
 #include "DLLChattingServer.h"
 #include "DLLChattingServerDlg.h"
 #include "afxdialogex.h"
-
+#include "..\DllTestTwo\CClientSocket.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
-#include "..\DllTestTwo\CClientSocket.h"
+
 
 
 // 응용 프로그램 정보에 사용되는 CAboutDlg 대화 상자입니다.
