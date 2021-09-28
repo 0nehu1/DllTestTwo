@@ -7,8 +7,8 @@ public:
 
 
     CAsyncSocket* m_pListenSocket;
-    void SetListenSocket(CAsyncSocket* pClient);
-    virtual void OnClose(int nErrorCode);
-    virtual void OnReceive(int nErrorCode);
+    void AFX_EXT_CLASS SetListenSocket(CAsyncSocket* pClient);
+    virtual void AFX_EXT_CLASS OnClose(int nErrorCode);
+    virtual void AFX_EXT_CLASS OnReceive(int nErrorCode);
 };
 
