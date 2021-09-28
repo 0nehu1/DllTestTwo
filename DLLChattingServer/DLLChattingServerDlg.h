@@ -3,6 +3,9 @@
 //
 #include "pch.h"
 #include "..\DllTestTwo\CListenSocket.h"
+#include "afxdialogex.h"
+#include "DLLChattingServer.h"
+
 #pragma once
 
 
