@@ -4,8 +4,7 @@ class CClientSocket :
     public CSocket
 {
 public:
-    CClientSocket();
-    virtual ~CClientSocket();
+
 
     CAsyncSocket* m_pListenSocket;
     void SetListenSocket(CAsyncSocket* pClient);
